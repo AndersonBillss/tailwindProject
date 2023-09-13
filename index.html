@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Practice</title>
+    <script src="https://kit.fontawesome.com/1713fc1b17.js" crossorigin="anonymous"></script>
+
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="flex flex-row">
+        <!-- navbar -->
+        <div class="nav backdrop-blur-sm bg-white/30">
+            <div class="text-center flex items-center selected">
+                <i class="fa-regular fa-circle-play"></i>
+            </div>
+            <div class="text-center flex items-center">
+                <i class="fa-solid fa-table-cells-large"></i>
+            </div>
+            <div class="text-center flex items-center">
+                <i class="fa-solid fa-tv"></i>
+            </div>
+            <div class="text-center flex items-center">
+                <i class="fa-solid fa-wifi"></i>
+            </div>
+            <div class="text-center flex items-center">
+                <i class="fa-solid fa-house"></i>
+            </div>
+            <div class="text-center flex items-center">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+
+        <!-- main content -->
+        <div class="content flex grow">
+            <!-- left section -->
+            <div class="left">
+                <img src="netflixLogo.png" class="logo">
+                <div class="options">
+                    <div class="flex items-baseline selected">
+                        <i class="fa-solid fa-circle-play"></i>
+                        <div>Browse</div>
+                    </div>
+                    <div class="flex items-baseline">
+                        <i class="fa-regular fa-heart"></i>
+                        <div>Wishlist</div>
+                    </div>
+                    <div class="flex items-baseline">
+                        <i class="fa-regular fa-calendar"></i>
+                        <div>Coming Soon</div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>New Trailers <img src="fire.png"></h3>
+
+                    <div class="movie">
+                        <img src="shadowAndBone.jpg">
+                        <div class="title flex">
+                            <div>Shadow and Bone</div>
+                            <i class="fa-sharp fa-solid fa-play"></i>
+                        </div>
+                    </div>
+
+                    <div class="movie">
+                        <img src="theNightAgent.jpg">
+                        <div class="title flex">
+                            <div>The Night Agent</div>
+                            <i class="fa-sharp fa-solid fa-play"></i>
+                        </div>
+                    </div>
+
+                    <div class="movie">
+                        <img src="theWitcher.webp">
+                        <div class="title flex">
+                            <div>The Witcher</div>
+                            <i class="fa-sharp fa-solid fa-play"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- right section -->
+            <div class="right flex grow">
+                <div class="top flex grow">
+                    <div class=" topLeft flex">
+                        <div class="flex">
+                            <i class="fa-solid fa-chevron-left arrows"></i>
+                            <i class="fa-solid fa-chevron-right arrows"></i>
+                        </div>
+
+                        <div class="flex search">
+                            <i class="fa-solid fa-microphone"></i>
+                            <div>Search...</div>
+                        </div>
+                    </div>
+                    <div class="topRight flex">
+
+                        <div class="notification">
+                            <i class="fa-regular fa-bell bell"></i>
+                            <div class="notificationMarker"></div>
+                        </div>
+
+                        <div class="profile">
+                                <img src="profilePlaceholder.jpeg"/>
+                            <div class="profileName">
+                                <h6>Person A</h6>
+                                <div>@Person</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <div class="mainMovie flex grow">
+                    <img src="peakyBlinders.jpg" class="flex grow">
+                    <div class="mainMovieLeft">
+                        <img src="movieTitle.png">
+                        <div>
+                            2013 - Drama - 5 Seasons
+                        </div>
+                        <div class="flex mainMovieOptions">
+                            <div class="watch">Watch</div>
+                            <div class="add"><i class="fa-solid fa-plus"></i></div>
+                        </div>
+                    </div>
+                    <div class="mainMovieRight">
+                        <img src="moviePlaceholder.jpeg" class="selected">
+                        <img src="moviePlaceholder.jpeg">
+                        <img src="moviePlaceholder.jpeg">
+                    </div>
+                </div>
+
+
+
+                <div>
+                    <div>
+                        <h3>Popcorn Mania</h3>
+                        <div class="popcornMania">
+
+
+
+                            <div class="movie2">
+                                <div class = gradient>
+                                    <img src="brooklyn99.jpg">
+                                </div>
+                                <div class="title flex">
+                                    <div>
+                                        <div>
+                                            Brooklyn 99
+                                        </div>
+                                        <div class="movieInfo">
+                                            <div>2020</div>
+                                            <div>U/A 16+</div>
+                                            <div>7 Seasons</div>
+                                        </div>
+                                    </div>
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </div>
+
+                            <div class="movie2">
+                                <div class = gradient>
+                                    <img src="readyPlayer1.jpg">
+                                </div>
+                                <div class="title flex">
+                                    <div>
+                                        <div>
+                                            Ready Player 1
+                                        </div>
+                                        <div class="movieInfo">
+                                            <div>2018</div>
+                                            <div>U/A 13+</div>
+                                            <div>2h 20m</div>
+                                        </div>
+                                    </div>
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </div>
+
+                            <div class="movie2">
+                                <div class = gradient>
+                                    <img src="moneyHeist.jpg">
+                                </div>
+                                <div class="title flex">
+                                    <div>
+                                        <div>
+                                            Money Heist
+                                        </div>
+                                        <div class="movieInfo">
+                                            <div>2021</div>
+                                            <div>A</div>
+                                            <div>2hr 20m</div>
+                                        </div>
+                                    </div>
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </div>
+
+                            <div class="movie2">
+                                <div class = gradient>
+                                    <img src="ashVsEvilDead.jpg">
+                                </div>
+                                <div class="title flex">
+                                    <div>
+                                        <div>
+                                            Ash vs. Evil Dead
+                                        </div>
+                                        <div class="movieInfo">
+                                            <div>2018</div>
+                                            <div>A</div>
+                                            <div>3 Seasons</div>
+                                        </div>
+                                    </div>
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div>
+                    <h3>Continue Watching</h3>
+                    <div class="continueWatching">
+
+                        <div class="movie3">
+                            <div class="gradient2">
+                                <img src="redNotice.webp">
+                            </div>
+                            <div class="play">
+                                <i class="fa-sharp fa-solid fa-play"></i>
+                            </div>
+                            <div class="title flex">
+                                <div>Red Notice</div>
+                            </div>
+                            <div class="progress">
+                                <div class="progressRed1"></div>
+                                <div class="progressGray1"></div>
+                            </div>
+                        </div>
+
+                        <div class="movie3">
+                            <div class="gradient2">
+                                <img src="extraction.webp">
+                            </div>
+                            <div class="play">
+                                <i class="fa-sharp fa-solid fa-play"></i>
+                            </div>
+                            <div class="title flex">
+                                <div>Extraction</div>
+                            </div>
+                            <div class="progress">
+                                <div class="progressRed2"></div>
+                                <div class="progressGray2"></div>
+                            </div>
+                        </div>
+
+                        <div class="movie3">
+                            <div class="gradient2">
+                                <img src="theAdamProject.webp">
+                            </div>
+                            <div class="play">
+                                <i class="fa-sharp fa-solid fa-play"></i>
+                            </div>
+                            <div class="title flex">
+                                <div>The Adam Project</div>
+                            </div>
+                            <div class="progress">
+                                <div class="progressRed3"></div>
+                                <div class="progressGray3"></div>
+                            </div>
+                        </div>
+
+                        <div class="movie3">
+                            <div class="gradient2">
+                                <img src="theOldGuard.jpg">
+                            </div>
+                            <div class="play">
+                                <i class="fa-sharp fa-solid fa-play"></i>
+                            </div>
+                            <div class="title flex">
+                                <div>The Old Guard</div>
+                            </div>
+                            <div class="progress">
+                                <div class="progressRed4"></div>
+                                <div class="progressGray4"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
